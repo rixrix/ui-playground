@@ -1,0 +1,31 @@
+{
+  "name": "ui-playground",
+  "version": "0.1.0",
+  "description": "A UI/UX playground with HarpJS and browser sync",
+  "main": "index.js",
+  "scripts": {
+    "server": "./node_modules/.bin/harp server --port 8080 & ./node_modules/.bin/browser-sync start --proxy 'localhost:8080' --files='*.ejs' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rixrix/ui-playground.git"
+  },
+  "keywords": [
+    "harpjs",
+    "browsersync",
+    "ui",
+    "playground"
+  ],
+  "author": "Richard Sentino <richard@mindginative.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rixrix/ui-playground/issues"
+  },
+  "homepage": "https://github.com/rixrix/ui-playground#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "conventional-github-releaser": "^1.1.2",
+    "harp": "^0.20.3",
+    "standard-version": "^2.1.2"
+  }
+}
